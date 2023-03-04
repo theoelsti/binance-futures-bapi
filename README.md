@@ -6,6 +6,8 @@ The main use of this [leaderboard ](https://www.binance.com/en/futures-activity/
 
 I decided to startt documenting this API since binance don't want to.
 
+**Feel Free to contribute !**
+
 ### Leaderboard
 
 ```
