@@ -6,4 +6,4 @@ The main use of this [leaderboard ](https://www.binance.com/en/futures-activity/
 
 I decided to start documenting this API since binance don't want to and people are selling it.
 
-Everything is in the  [Wiki ](https://github.com/theoelsti/binance-futures-api/wiki) !
+Everything is in the  [Wiki ](https://github.com/theoelsti/binance-futures-bapi/wiki) !
