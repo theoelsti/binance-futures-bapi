@@ -6,8 +6,6 @@ The main use of this [leaderboard ](https://www.binance.com/en/futures-activity/
 
 I decided to startt documenting this API since binance don't want to.
 
-**Feel Free to contribute !**
-
 ### Leaderboard
 
 ```
@@ -17,9 +15,15 @@ https://www.binance.com/bapi/futures/v3/public/future/leaderboard/getLeaderboard
 ```
 {
   "isShared": true,
-  "isTrader": false,
-  "periodType": "WEEKLY",
-  "statisticsType": "ROI",
-  "tradeType": "PERPETUAL"
+  "isTrader": false|true,
+  "periodType": "DAILY|WEEKLY|MONTHLY|ALL",
+  "statisticsType": "PNL|ROI",
+  "tradeType": "DELIVERY|PERPETUAL"
 }
 ```
+Explaining : 
+* `isShared` must be on True since it's asking to show all the traders that have public positions.
+* `isTrader` can be enabled to display the traders having [**Copy Trading**](https://en.wikipedia.org/wiki/Copy_trading).
+* `periodType` may have differents values depending on the results timeframe you want.
+* `statisticsType` changes the results from **R**eturn **O**n **I**nvestment (%) to **P**rofits '**N** **L**osses ($)
+* `tradeType` changes the trade type : Perpetual futures support up to 125x leverage, while delivery futures only support up to 20x leverage
